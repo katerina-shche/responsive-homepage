@@ -32,6 +32,15 @@ body {
 .btn.light{
     background: var(--orange-color);
 }
+/* doesnt work */
 .enrol-icon::before {
     content: url('./images/enrol-icon.svg');
+    
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+}
+.btn.enrol-icon {
+    padding-left: 60px;
 }
