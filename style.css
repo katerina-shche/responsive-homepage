@@ -89,14 +89,14 @@ nav ul li a {
 
 .hero-section {
     display: flex;
-    height: 100hv;
+    height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
 }
 .hero-section .left {
-    width: 457px;
+    flex: 1;
 }
 .hero-section .left h1 {
     color: #FFF;
@@ -114,16 +114,66 @@ nav ul li a {
     font-weight: 400;
     line-height: 200%; /* 32px */
     margin-bottom: 30px;
+    width: 457px;
 }
 .hero-section .right {
     align-self: flex-end;
+    
 }
 .hero-section .right img {
     height: 520px;
     vertical-align: middle;
+    
 }
 
 /* Achievements Cards */
-.achievement-cards {
-    display: none;
+.achievement-card {
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;  
 }
+.achievement-card .content {
+    border-radius: 24px;
+    background: #fff;
+    padding: 8px 32px;
+}
+.achievement-card.students-enrolled {
+    left: 49%;
+    top: 270px;
+}
+.achievement-card.overall-rating {
+    left: 47%;
+    top: 470px;
+}
+
+.achievement-card h3 {
+    color: var(--dark-blue-blue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.achievement-card p {
+    color: var(--dark-blue-blue);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400; 
+    margin-top: -8px;
+    margin-bottom: 8px;  
+    width: 100%;
+    text-align: center;
+}
+.achievement-card .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%); 
+    z-index: -100; 
+    left: 8px;
+    top: 8px;
+}
+
+/* Testimonial section */
