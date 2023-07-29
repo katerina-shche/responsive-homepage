@@ -102,7 +102,6 @@ nav ul li a {
     color: #FFF;
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
-    font-style: normal;
     font-weight: 900;
     line-height: 125%; /* 62.5px */
     margin-bottom: 0;
@@ -190,6 +189,9 @@ h2 {
 h2.light {
     color: var(--light-color)
 }
+h2.dark {
+    color: var(--dark-blue-blue)
+}
 section p {
     color: var(--dark-blue-blue);
     font-family: 'Poppins', sans-serif;
@@ -202,6 +204,7 @@ section p {
     display: flex;
     gap: 100px;
     align-items: center;
+    justify-items: center;
 }
 .testimonials-section .mobile-btn {
     display: none;
@@ -215,6 +218,28 @@ section p {
     margin-bottom: 50px;  
     position: relative;
 }
+.testimonials-section .testimonial-card::before {
+    content: '';
+    width: 28px;
+    position: absolute;
+    height: 40px;
+    top: -40px;
+    left: 50px;
+    background: var(--dark-blue-blue);
+    border-radius: 24px 24px 0 0;
+}
+.testimonials-section .testimonial-card:last-child::before {
+    content: '';
+    width: 28px;
+    position: absolute;
+    height: calc(100% + 90px);
+    top: -50px;
+    left: 30px;
+    background: var(--dark-blue-blue);
+    border-radius:  0 0 24px 24px;
+    z-index: -1;
+}
+
 .testimonials-section .testimonial-card .content {
     color: #FFF;
     font-family: 'Raleway', sans-serif;
@@ -238,6 +263,8 @@ section p {
 }
 .testimonials-section .testimonial-card .info {
     padding: 8px 32px;
+    background: #FFF;
+    border-radius: 24px;
 }
 .testimonials-section .testimonial-card .info p.company {
     color: var(--dark-blue-blue);
@@ -252,4 +279,7 @@ section p {
     position: absolute;
     right: 35px;
     bottom: 20px;
+}
+.testimonials-section .testimonial-card:last-child {
+    transform: translateX(20px);
 }
