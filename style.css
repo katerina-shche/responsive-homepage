@@ -363,3 +363,9 @@ section p {
 .app-section {
     text-align: center;
 }
+.app-section .app-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
