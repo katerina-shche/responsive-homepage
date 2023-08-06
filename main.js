@@ -1,13 +1,16 @@
 const nav = document.querySelector('nav');
-const handleScroll = (e) => {
+const mobileNav = document.querySelector('nav.mobile-nav');
+const handleScroll = () => {
     if(window.scrollY > 60) {
-        console.log('scrolling')
-        nav.classList.add('scrolled')
+        nav.classList.add('scrolled');
+        mobileNav.classList.add('scrolled');
+
     } else {
         nav.classList.remove('scrolled');
+        mobileNav.classList.remove('scrolled');
     }
 };
 
-window.addEventListener('scroll', handleScroll)
+window.addEventListener('scroll', handleScroll);
 
 
