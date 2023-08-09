@@ -713,5 +713,41 @@ nav.mobile-nav,
     .testimonials-section .testimonial-card .info {
         padding: 20px 32px;
     }
+    .courses-section .wrapper {
+        padding: 0;
+    }
+    .courses-section .course-cards img {
+        height: 240px;
+    }
+    .courses-section .wrapper .btn {
+        right: 32px;
+    }
+    footer .wrapper .links-container {
+        grid-template-columns: 1fr; 
+        text-align: center; 
+    }
+    footer .links-container .links:last-child {
+        grid-column: 1 / 2;
+    }
+    footer ul {
+        padding: 0;
+    }
+    footer form input {
+        width: 100%;
+    }
+    footer form .submit-btn {
+        top: 140%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    footer form {
+        margin-left: 0;
+    }
+    footer .copyright {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 14px;
+    }
     
 }
