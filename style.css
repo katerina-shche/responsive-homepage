@@ -91,7 +91,6 @@ nav ul {
 }
 nav ul li a {
     color: #FFF;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: bold; 
     text-decoration: none;      
@@ -105,12 +104,12 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
+    color: #FFF
 }
 .hero-section .left {
     flex: 1;
 }
 .hero-section .left h1 {
-    color: #FFF;
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     font-weight: 900;
@@ -118,8 +117,6 @@ nav ul li a {
     margin-bottom: 0;
 }
 .hero-section .left p {
-    color: #FFF;
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 200%; /* 32px */
@@ -141,6 +138,7 @@ nav ul li a {
     position: absolute;
     z-index: 1;
     min-width: 200px;  
+    color: var(--dark-blue-blue);
 }
 .achievement-card .content {
     border-radius: 24px;
@@ -157,8 +155,6 @@ nav ul li a {
 }
 
 .achievement-card h3 {
-    color: var(--dark-blue-blue);
-    font-family: 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
     margin: 0;
@@ -166,8 +162,6 @@ nav ul li a {
     width: 100%;
 }
 .achievement-card p {
-    color: var(--dark-blue-blue);
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400; 
     margin-top: -8px;
@@ -205,7 +199,6 @@ h2.dark {
 }
 section p {
     color: var(--dark-blue-blue);
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 200%; /* 32px */
@@ -379,19 +372,17 @@ section p {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    color: #FFF;
 }
 .app-section .app-btn {
     padding: 20px 31px;
     background: #000;
-    color: #fff;
     display: flex;
     align-items: center;
     gap: 14px;
 }
-.app-section .app-btn {
-    color: #FFF;
+.app-section .app-btn span {
     text-align: center;
-    font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
     line-height: 200%; /* 48px */
@@ -437,9 +428,9 @@ footer form input {
     font-weight: 400;
     line-height: 200%; /* 32px */
     border-radius: 8px;
+    padding: 8px 160px 8px 32px;
     border: none;
     width: 100%;
-    padding: 1px;
     
 }
 footer form .submit-btn {
@@ -733,6 +724,7 @@ nav.mobile-nav,
         padding: 0;
     }
     footer form input {
+        padding: 8px 32px;
         width: 100%;
     }
     footer form .submit-btn {
