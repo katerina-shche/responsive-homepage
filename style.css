@@ -74,7 +74,7 @@ nav.scrolled {
     top: 0%;
     padding: 12px;
     z-index: 100;
-
+    
 }
 nav .logo {
     color: #fff;
@@ -104,7 +104,6 @@ nav ul li a {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
-
     color: #FFF
 }
 .hero-section .left {
@@ -138,9 +137,9 @@ nav ul li a {
 .achievement-card {
     position: absolute;
     z-index: 1;
-    min-width: 200px;
+    min-width: 200px;  
     color: var(--dark-blue-blue);
-  
+}
 .achievement-card .content {
     border-radius: 24px;
     background: #fff;
@@ -742,4 +741,5 @@ nav.mobile-nav,
         text-align: center;
         font-size: 14px;
     }
+    
 }
