@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Welcome</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,12 +31,42 @@
                 </ul>
             </nav>
             <!-- End of desk top navigation menu -->
+
+            <nav class="mobile-nav scrolled">
+                <div class="logo">GD.</div>
+                <div class="menu-icon">
+                    <img src="./images/menu-icon.svg" 
+                    alt="" />
+                </div>
+            </nav>
+            <div class="mobile-menu-container">
+                <div class="close-icon">
+                    <img src="./images/cross-icon.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Work</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn dark">Enrol Now</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of mobile navigation -->
+
             <div class="hero-section">
                 <div class="left">
                     <h1>Learn the art of <br> Game Dev</h1>
-                    <p>This is a comprehensive course on Game Development. You will learn 
-                       everything from generating an idea to publishing your games to 
-                       different platforms.
+                    <p>This is a comprehensive course on Game Development. 
+                        You will learn everything from generating an idea to 
+                        publishing your games to different platforms.
+
                     </p>
                     <a href="#" class="btn light enrol-icon">Enrol Now</a>
                 </div>
@@ -55,8 +86,9 @@
                     <div class="achievement-card overall-rating">
                         <div class="content">
                             <div>
-                                <h3>4.7 <img src="./images/star-icon.svg" alt="star-icon"></h3>
-                                
+                                <h3>4.7
+                                <img src="./images/star-icon.svg" alt="star-icon">
+                                </h3>
                             </div>
 
                             <p>Overall Rating</p>
@@ -77,7 +109,7 @@
                     </div>
                     <div class="info">
                         <h4>Jane Cooper</h4>
-                        <p>Developer, Sony</p>
+                        <p class="company">Developer, Sony</p>
                     </div>
                     <img src="./images/Testimonial-1.png" alt="">
                 </div>
@@ -87,14 +119,14 @@
                     </div>
                     <div class="info">
                         <h4>Jacob Jones</h4>
-                        <p>Designer, Facebook</p>
+                        <p class="company">Designer, Facebook</p>
                     </div>
                     <img src="./images/Testimonial-2.png" alt="">
                 </div>
             </div>
             <div class="right">
                 <h2 class="dark">What our students say</h2>
-                <div class="faechers">
+                <div class="feachers">
                     <p>All students get access to all the videos and also the source code of the projects.</p>
                     <p>You will also have access to a private Discord channel where you can discuss your doubts.</p>
                 </div>
@@ -185,19 +217,20 @@
                             contact@email.com
                         </li>
                     </ul>
+
+                    <div class="social">
+                        <a href="#">
+                         <img src="./images/facebook-icon.svg" alt="Facebook link">
+                        </a>
+                       <a href="#">
+                          <img src="./images/instagram-icon.svg" alt="Instagram link">
+                      </a>
+                 </div>
+                 <form action="#">
+                     <input type="email" placeholder="Email Address">
+                     <button class="submit-btn">Submit</button>
+                 </form>
                 </div>
-                <div class="social">
-                    <a href="#">
-                        <img src="./images/facebook-icon.svg" alt="Facebook link">
-                    </a>
-                    <a href="#">
-                        <img src="./images/instagram-icon.svg" alt="Instagram link">
-                    </a>
-                </div>
-                <form action="#">
-                    <input type="email" placeholder="Email Address">
-                    <button class="submit-btn">Submit</button>
-                </form>
 
             </div>
             <p class="copyright">This website is developed by GTCoding © 2021</p>
